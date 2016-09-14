@@ -5,18 +5,22 @@
 ---
 
 ### Goal
-The goal is to create an app in 4hours. We will be using the Meetup API and build an app that asks the user if he is really going to an event. In 4 hours. :-)
+
+The goal is to create an app in 4hours. We will be using the Meetup API and build an app where the user can see his/her own events and RVSP to each event.
 
 ### User stories
 
-1. As a user attending the RN meetup, I should be able to RSVP from within the app;
-2. As a user, the app should remind me to update the RSVP hours before the event, 
-3. As a user I should see the RSVPs to the event in a new view; 
+1. As a user, I should see all my upcoming events in a ListView;
+2. As a user, I should be able to update my RVSP to upcoming events from the ListView mentioned in 1.;
+3. As a user I should see the attendees of an event, displayed in a new view; 
 
-### Relevant API endpoints
+### HOWTO Meetup Api
 
-1. GET: [Events for a certain group](http://www.meetup.com/meetup_api/docs/:urlname/events/#list)
-2. POST: [Updating RSVP](http://www.meetup.com/meetup_api/docs/2/rsvp/)
+1. Get own key: [https://secure.meetup.com/meetup_api/key/](https://secure.meetup.com/meetup_api/key/)
+2. GET RNCPH event info: [https://api.meetup.com/react-native-cph/events?member_id=self&key=](https://api.meetup.com/react-native-cph/events?member_id=self&key=)
+3. UPDATE RSVSP: [https://api.meetup.com/react-native-cph/events/233763008/rsvps?sign=true&key=&response=yes)](https://api.meetup.com/react-native-cph/events/233763008/rsvps?sign=true&key=&response=yes)
+4. GET Attendes [https://api.meetup.com/react-native-cph/events/233763008/rsvps?&sign=true&photo-host=public&key=](https://api.meetup.com/react-native-cph/events/233763008/rsvps?&sign=true&photo-host=public&key=)
+
 
 ### Guesstimations
 
